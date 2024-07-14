@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "e857136b-d662-4046-8679-fc8199570c1a",
+		"name": "BPI-2024",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5079144",
+		"_collection_link": "https://incafact.postman.co/workspace/IncaFact~433fdeca-67ed-4585-8dcf-bff9bea3581e/collection/5079144-e857136b-d662-4046-8679-fc8199570c1a?action=share&source=collection_link&creator=5079144"
+	},
+	"item": [
+		{
+			"name": "login get token",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "buscar por idcliente gateway",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/clientes/buscar/c2GZWVZnXoAVXWfNrQvFUw==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"buscar",
+						"c2GZWVZnXoAVXWfNrQvFUw=="
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/clientes/buscar/c2GZWVZnXoAVXWfNrQvFUw==",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"buscar",
+						"c2GZWVZnXoAVXWfNrQvFUw=="
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "{{oauth2}}",
+			"value": "eyJraWQiOiJkZWFhYWY4NS04YjY1LTQ2MTQtOTNhOS01M2YwZjZkMjQxMDUiLCJhbGciOiJSUzI1NiJ9"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SpringAuthorizationServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringAuthorizationServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot3.1.0-SpringAuthorizationSever1.1.0/SpringAuthorizationServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringResourceServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringResourceServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authorization-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authorization-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-cliente/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-producto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-producto/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-client/oauth-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-client/oauth-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-server/oauth-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-server/oauth-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resource-server/resource-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resource-server/resource-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-gateway/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

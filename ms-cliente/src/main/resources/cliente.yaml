@@ -1,0 +1,94 @@
+openapi: 3.0.1
+info:
+  title: Cliente API
+  description: API para gestionar información de clientes.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8081/api/v1
+    description: Local server
+paths:
+  /clientes/buscar/{codigo}:
+    get:
+      summary: Obtener cliente por código único
+      description: Retorna la información del cliente asociado a un código único específico.
+      operationId: getCliente
+      parameters:
+        - name: codigo
+          in: path
+          required: true
+          description: Código único del cliente
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Información del cliente y sus productos financieros
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClienteProductos'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ClienteProductos'
+        '404':
+          description: Cliente no encontrado
+components:
+  schemas:
+    Cliente:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          description: Identificador único del cliente
+        nombres:
+          type: string
+          description: Nombres del cliente
+        apellidos:
+          type: string
+          description: Apellidos del cliente
+        tipoDocumento:
+          type: string
+          description: Tipo de documento del cliente
+        numeroDocumento:
+          type: string
+          description: Número de documento del cliente
+      required:
+        - nombres
+        - apellidos
+        - tipoDocumento
+        - numeroDocumento
+    Producto:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          description: Identificador único del producto
+        tipoProducto:
+          type: string
+          description: Tipo de producto
+        nombreProducto:
+          type: string
+          description: Nombre del producto
+        saldo:
+          type: number
+          format: double
+          description: Saldo del producto
+        clienteId:
+          type: integer
+          format: int64
+          description: Identificador del cliente asociado al producto
+      required:
+        - tipoProducto
+        - nombreProducto
+        - saldo
+        - clienteId
+    ClienteProductos:
+      type: object
+      properties:
+        cliente:
+          $ref: '#/components/schemas/Cliente'
+        productos:
+          type: array
+          items:
+            $ref: '#/components/schemas/Producto'

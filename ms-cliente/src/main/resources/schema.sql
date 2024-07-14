@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS clientes (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nombres VARCHAR(255) NOT NULL,
+    apellidos VARCHAR(255) NOT NULL,
+    tipodocumento VARCHAR(255) NOT NULL,
+    numerodocumento VARCHAR(255) NOT NULL
+);

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-cliente" />
+        <module name="ms-producto" />
+        <module name="oauth-server" />
+        <module name="spring-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authorization-server" target="17" />
+      <module name="oauth-client" target="17" />
+      <module name="resource-server" target="17" />
+      <module name="SpringAuthorizationServer" target="17" />
+      <module name="SpringAuthorizationServer (1) (com.matomaylla)" target="17" />
+      <module name="SpringAuthorizationServer (2) (willydekeyser)" target="17" />
+      <module name="SpringResourceServer" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringAuthorizationServer" options="-parameters" />
+      <module name="SpringAuthorizationServer (1) (com.matomaylla)" options="-parameters" />
+      <module name="SpringAuthorizationServer (2) (willydekeyser)" options="-parameters" />
+      <module name="SpringResourceServer" options="-parameters" />
+      <module name="authorization-server" options="-parameters" />
+      <module name="ms-cliente" options="-parameters" />
+      <module name="ms-producto" options="-parameters" />
+      <module name="oauth-client" options="-parameters" />
+      <module name="oauth-server" options="-parameters" />
+      <module name="resource-server" options="-parameters" />
+      <module name="spring-gateway" options="-parameters" />
+    </option>
+  </component>
+</project>

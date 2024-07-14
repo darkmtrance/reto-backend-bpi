@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ms-cliente/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth-client/oauth-client/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth-server/oauth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/resource-server/resource-server/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-producto/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringResourceServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAuthorizationServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot3.1.0-SpringAuthorizationSever1.1.0/SpringAuthorizationServer/pom.xml" />
+        <option value="$PROJECT_DIR$/authorization-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-gateway/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SpringAuthorizationServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringResourceServer/pom.xml" />
+        <option value="$PROJECT_DIR$/authorization-server/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

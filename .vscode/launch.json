@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-OauthServerApplication<oauth-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.irojas.oauth.oauthserver.OauthServerApplication",
+            "projectName": "oauth-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-OauthClientApplication<oauth-client>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.irojas.oauth.oauthclient.OauthClientApplication",
+            "projectName": "oauth-client",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

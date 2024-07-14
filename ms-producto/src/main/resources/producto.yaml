@@ -1,0 +1,71 @@
+openapi: 3.0.1
+info:
+  title: Producto API
+  description: API para gestionar productos financieros.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8082/api/v1
+    description: Local server
+tags:
+  - name: producto
+    description: Operaciones para gestionar productos financieros.
+paths:
+  /productos/{clienteId}:
+    get:
+      tags:
+        - productos
+      summary: Obtener productos por clienteId
+      description: Retorna todos los productos financieros asociados a un cliente específico.
+      operationId: getProductosByClienteId
+      parameters:
+        - name: clienteId
+          in: path
+          required: true
+          description: ID del cliente
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Lista de productos financieros
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Producto'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Producto'
+        '404':
+          description: Cliente no encontrado
+components:
+  schemas:
+    Producto:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          description: Identificador único del producto
+        tipoProducto:
+          type: string
+          description: Tipo de producto
+        nombreProducto:
+          type: string
+          description: Nombre del producto
+        saldo:
+          type: number
+          format: double
+          description: Saldo del producto
+        clienteId:
+          type: integer
+          format: int64
+          description: Identificador del cliente asociado al producto
+      required:
+        - tipoProducto
+        - nombreProducto
+        - saldo
+        - clienteId
